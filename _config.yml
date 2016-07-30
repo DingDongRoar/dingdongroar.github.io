@@ -11,7 +11,7 @@ email: dingdongroar@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A simple site for practicing git deployment and using the Jekyll blog-aware framework.  
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "localhost:4000" # the base hostname & protocol for your site
+url: "https://dingdongroar.github.io" # the base hostname & protocol for your site
 twitter_username: dingdongroar
 github_username:  dingdongroar
 
