@@ -47,10 +47,10 @@ OUTPUT:
 Here is an example of *kramdown* for adding an image to a page/post.
 
 ~~~ kramdown
-![alt text](http://domain/download-folder/file-name){: style="width: size-in-pixels"}
+![alt text]({{ site.url }}/download-folder/file-name){: style="width: size-in-pixels"}
 ~~~
 
-![avatar](http://localhost:4000/assets/myAvatar.svg){: style="width: 200px"}
+![avatar]({{ site.url }}/assets/myAvatar.svg){: style="width: 200px"}
 
 I hold the following certifications:
 
