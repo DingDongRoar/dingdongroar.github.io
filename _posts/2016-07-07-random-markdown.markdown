@@ -9,12 +9,8 @@ Here is some code I wrote in *Python*{: style="color: green"}.
 ~~~ python
 
 def status(item, action, cart):
-    if action == 'Add':
-        print 'An item ({0}) was added to the {1} cart'.format(item, cart)
-    elif action == 'Remove':
-        print 'An item ({0}) was removed from the {1} cart'.format(item, cart)
-    else:
-        print 'The action \'{0}\' is not allowed.'.format(action)
+    statusMessage = 'An item ({0}) was {1} the {2} cart.'
+    print statusMessage.format(item, action, cart)
 
 
 class store:
@@ -27,12 +23,12 @@ class store:
         self.item = item
         self.price = price
         self.cart[item] = self.price
-        status(self.item, 'Add', self.storeName)
+        status(self.item, 'added to', self.storeName)
 
     def removeItem(self, item):
         self.item = item
         self.cart.pop(self.item)
-        status(self.item, 'Remove', self.storeName)
+        status(self.item, 'removed from', self.storeName)
      
     def printReceipt(self):
         print
