@@ -4,6 +4,8 @@ title: "Random Markdown"
 date: 2016-07-07
 author: 'by Ding Dong Roar'
 ---
+Just personal notes to myself regarding the use of *kramdown* markdown.
+
 Here is some *Python*{: style="color: green"} code.
 
 ~~~ python
@@ -36,13 +38,13 @@ class Store:
         print ' ' * 5 + self.storeName + ' RECEIPT' + ' ' * 5
         print '=' * 25
         for item in self.cart:
-            print '{:>12} {:>12.2f}'.format(item, self.cart[item])
+            print '{:>12} {:12.2f}'.format(item, self.cart[item])
         print '=' * 25
-        print '{:>12} {:>12.2f}'.format('TOTAL:', sum(self.cart.values()))
+        print '{:>12} {:12.2f}'.format('TOTAL:', sum(self.cart.values()))
         print
 ~~~
 
-Sample Output of above code:
+Sample output of above code:
 
 ~~~ python
 >>> target = Store('Target')
@@ -63,6 +65,8 @@ An item (soap) has been added to the Target cart.
 =========================
 TOTAL:              22.50
 ~~~
+
+More sample *Python*{: style="color: green"} code.
 
 ~~~ python
 # Create a staircase of # stepping from the left side
@@ -85,7 +89,7 @@ OUTPUT:
 Here is an example of *kramdown* for adding an image to a page/post.
 
 ~~~ kramdown
-![alt text]({{ site.url }}/download-folder/file-name){: style="width: size-in-pixels"}
+![alt text](\{{ site.url }}/download-folder/file-name){: style="width: size-in-pixels"}
 ~~~
 
 ![avatar]({{ site.url }}/assets/myAvatar.svg){: style="width: 200px"}
@@ -96,6 +100,6 @@ I hold the following certifications:
 * CompTIA Net+
 * Electronic Technology
 
-...and, I am studying for CCNA certification.
+...and, I am studying for Security+ and CCNA certification.
 
 *[CCNA]: Cisco Certified Network Associate
