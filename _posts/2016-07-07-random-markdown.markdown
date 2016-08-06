@@ -2,9 +2,9 @@
 layout: post
 title: "Random Markdown"
 date: 2016-07-07
-author: 'by D.D.Rawr!'
+author: 'by Ding Dong Roar'
 ---
-Here is some code I wrote in *Python*{: style="color: green"}.
+Here is some *Python*{: style="color: green"} code.
 
 ~~~ python
 
@@ -13,7 +13,7 @@ def status(item, action, cart):
     print statusMessage.format(item, action, cart)
 
 
-class store:
+class Store:
 
     def __init__(self, storeName):
         self.storeName = storeName
@@ -36,16 +36,36 @@ class store:
         print ' ' * 5 + self.storeName + ' RECEIPT' + ' ' * 5
         print '=' * 25
         for item in self.cart:
-            print '{:>12} {:>12}'.format(item, str(self.cart[item]))
+            print '{:>12} {:>12.2f}'.format(item, self.cart[item])
         print '=' * 25
-        print '{:>12} {:>12}'.format('TOTAL:', str(sum(self.cart.values())))
+        print '{:>12} {:>12.2f}'.format('TOTAL:', sum(self.cart.values()))
         print
 ~~~
 
+Sample Output of above code:
+
 ~~~ python
-"""
-Create a staircase of # stepping from the left side
-"""
+>>> target = Store('Target')
+
+>>> target.addItem('towel', 14.00)
+An item (towel) has been added to the Target cart.
+
+>>> target.addItem('soap', 8.50)
+An item (soap) has been added to the Target cart.
+
+>>> target.printReceipt()
+
+=========================
+     Target RECEIPT
+=========================
+        towel       14.00
+         soap        8.50
+=========================
+TOTAL:              22.50
+~~~
+
+~~~ python
+# Create a staircase of # stepping from the left side
 
 def StairCase(n):
     for x in range(0, n):
