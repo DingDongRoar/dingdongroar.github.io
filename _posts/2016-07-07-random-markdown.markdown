@@ -4,7 +4,7 @@ title: "Random Markdown"
 date: 2016-07-07
 author: 'by Ding Dong Roar'
 ---
-Just personal notes to myself regarding the use of *kramdown* markdown.
+Just personal notes to myself regarding the use of *kramdown* markdown of which only the results can be seen here.
 
 Here is some *Python*{: style="color: green"} code.
 
@@ -44,7 +44,7 @@ class Store:
         print
 ~~~
 
-Sample output of above code:
+Sample use and output of above code:
 
 ~~~ python
 >>> target = Store('Target')
@@ -63,7 +63,7 @@ An item (soap) has been added to the Target cart.
         towel       14.00
          soap        8.50
 =========================
-TOTAL:              22.50
+       TOTAL:       22.50
 ~~~
 
 More sample *Python*{: style="color: green"} code.

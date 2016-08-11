@@ -10,7 +10,7 @@ DingDongRoar is a veteran IT professional of more than twenty years.  He is expe
 
 He is passionate about learning and devoted to solving the technical challenges facing today's businesses.
 
-| ![APlusLogo]({{ site.url }}/assets/APlusLogo.png) | ![NetPlusLogo]({{ site.url }}/assets/NetPlusLogo.png) |
+| ![APlusLogo]({{ site.url }}/assets/APlusLogo_250.png) | ![NetPlusLogo]({{ site.url }}/assets/NetPlusLogo_250.png) |
 {: style="width:200px"}
 
 ---
